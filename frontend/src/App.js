@@ -2,12 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './components/Home';  // Assuming Home component exists
-import AddCar from './components/AddCar';  // Assuming AddCar component exists
-import CarList from './components/CarList';  // Assuming CarList component exists
-import CarDetail from './components/CarDetail';  // Assuming CarDetail component exists
-import Login from './components/Login';  // Login Component
-import Register from './components/Register';  // Register Component
+import Home from './components/Home';  
+import AddCar from './components/AddCar';    
+import CarDetail from './components/CarDetail';  
+import Login from './components/Login';  
+import Register from './components/Register';  
 
 function App() {
   return (
@@ -15,13 +14,12 @@ function App() {
       <Navbar />
       <div className="App">
         <Routes>
-          <Route path="/" element={<Login />} />  {/* Login Route */}
-          <Route path="/login" element={<Login />} />  {/* Login Route */}
+          <Route path="/" element={<Login />} />  
+          <Route path="/login" element={<Login />} />  
           <Route path="/home" element={<Home />} />
           <Route path="/add-car" element={<AddCar />} />
-          {/* <Route path="/cars" element={<CarList />} /> */}
           <Route path="/cars/:id" element={<CarDetail />} />
-          <Route path="/register" element={<Register />} />  {/* Register Route */}
+          <Route path="/register" element={<Register />} />  
         </Routes>
       </div>
     </Router>

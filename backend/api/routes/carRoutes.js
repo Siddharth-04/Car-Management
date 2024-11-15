@@ -1,5 +1,5 @@
 const express = require('express');
-const carController = require('../controllers/car.controller');
+const carController = require('../../api/controllers/car.controller');
 const router = express.Router();
 const authMiddleware = require('../middleware/authMiddleware');
 const upload = require('../middleware/upload'); 

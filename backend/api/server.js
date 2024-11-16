@@ -33,7 +33,6 @@ app.use('/auth', authRoutes);
 app.use('/cars', carRoutes); 
 
 app.get('/', (req, res) => {
-  res.send('API is running...');
   res.json({message:'Hello World'})
 });
 

@@ -19,7 +19,7 @@ const connectDB = async () => {
     console.error('MongoDB connection failed:', error);
   }
 };
-// Connect to MongoDB
+
 connectDB();
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(cors({

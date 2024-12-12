@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 //delete require.cache[require.resolve('dotenv')];
-require('dotenv').config();
+require("dotenv").config();
 
 console.log(process.env.MONGO_URI);
 //PASS = ABgDdlduVzNKeVVA
@@ -11,9 +11,9 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log('MongoDB connected');
+    console.log("MongoDB connected");
   } catch (error) {
-    console.error('MongoDB connection failed:', error);
+    console.error("MongoDB connection failed:", error);
   }
 };
 
